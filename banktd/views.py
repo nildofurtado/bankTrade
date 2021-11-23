@@ -10,4 +10,3 @@ class acesso():
     
     def cadastro(request):
         return render(request, 'painel/cadastro.html', {})
-
