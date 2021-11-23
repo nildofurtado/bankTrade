@@ -52,7 +52,7 @@ class DadosTipoConta(models.Model):
 class CadContaUsuario(models.Model):
     id              = models.AutoField(primary_key=True)
     idusuario       = models.OneToOneField(CadUsuario, on_delete=models.CASCADE)
-    Agencia         = models.IntegerField()
+    Agencia         = models.OneToOneField(DadosAgencia, on_delete=models.CASCADE)
     Conta           = models.IntegerField()
     Tipo            = models.OneToOneField(DadosTipoConta, on_delete=models.CASCADE)
     Created_date    = models.DateTimeField(default=timezone.now)
