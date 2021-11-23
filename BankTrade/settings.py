@@ -81,13 +81,17 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'BankTrade',
-        'USER' : 'nildopd',
-        #'USER': 'postgres',
-        #'PASSWORD': 'Nildo1048',
-        'PASSWORD': '@Thmpv77d6f',
-        'HOST': 'nildopd.mysql.pythonanywhere-services.com',
-        'PORT': '3306',
+        'OPTIONS': {
+            'read_default_file': '../.env.cnf',
+        },
+        
+        # 'NAME': 'BankTrade',
+        # 'USER' : 'nildopd',
+        # #'USER': 'postgres',
+        # #'PASSWORD': 'Nildo1048',
+        # 'PASSWORD': '@Thmpv77d6f',
+        # 'HOST': 'nildopd.mysql.pythonanywhere-services.com',
+        # 'PORT': '3306',
     }
 }
 
